@@ -1,0 +1,7 @@
+1. The user tries to login to the application
+2. If the login credentials are valid, the app generates a 2FA secret key and shows the user a QR code
+3. The User scans the QR code
+4. The authenticator app stores the 2FA secret key and generates a time based on time password(TOTP)
+5. The user enters the TOTP
+6. The app validates the TOTP code
+7. If it's valid, the login is successful
